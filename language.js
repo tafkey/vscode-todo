@@ -14,6 +14,7 @@ var ruby = 'Ruby';
 var swift = 'Swift';
 var typescript = 'TypeScript';
 var visualbasic = 'VisualBasic';
+var markdown = 'Markdown';
 
 language[all] = {
     name: all,
@@ -112,14 +113,22 @@ language[visualbasic] = {
     exclude: '',
 };
 
+language[markdown] = {
+    name: markdown,
+    alias: 'markdown',
+    extension: '**/*.md',
+    exclude: '',
+};
+
 language.all = [language[all], language[go], language[javascript], 
     language[php], language[coffeescript], language[c], language[cpp], 
     language[csharp], language[objectivec], language[python], language[ruby], 
-    language[swift], language[typescript], language[visualbasic]
+    language[swift], language[typescript], language[visualbasic], 
+    language[markdown]
 ];
 
 language.allName = [all, go, javascript, php, coffeescript, c, cpp, csharp,
-    objectivec, python, ruby, swift, typescript, visualbasic
+    objectivec, python, ruby, swift, typescript, visualbasic, markdown
 ];
 
 module.exports = language;
